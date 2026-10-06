@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-cormorant: "Cormorant Garamond", Georgia, serif;
+  --font-script: "Alex Brush", "Pinyon Script", "Great Vibes", cursive;
+  --font-pinyon: "Pinyon Script", cursive;
+  --font-alex: "Alex Brush", cursive;
+  --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-rose-50: #FFF9FA;
+  --color-rose-100: #FAF4F5;
+  --color-rose-200: #F4E2E6;
+  --color-rose-300: #E7BDC8;
+  --color-rose-400: #D38E9F;
+  --color-rose-500: #B86278;
+  --color-rose-600: #A8586E;
+  --color-rose-700: #8E3E53;
+  --color-rose-800: #742A3D;
+  --color-rose-900: #581C2B;
+
+  --color-gold-300: #EAD8B0;
+  --color-gold-400: #DCBF82;
+  --color-gold-500: #C5A059;
+  --color-gold-600: #B3883C;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAF4F5;
+  color: #7A263D;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility Font Classes */
+.font-serif {
+  font-family: var(--font-serif);
+}
+.font-cormorant {
+  font-family: var(--font-cormorant);
+}
+.font-script {
+  font-family: var(--font-script);
+}
+.font-pinyon {
+  font-family: var(--font-pinyon);
+}
+.font-alex {
+  font-family: var(--font-alex);
+}
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar in dusty rose and gold */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF4F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D38E9F;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B86278;
+}
+
+/* Selection */
+::selection {
+  background: #B86278;
+  color: #FFFFFF;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
